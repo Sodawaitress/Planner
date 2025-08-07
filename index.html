@@ -85,6 +85,8 @@
             repeatEnd: '', // 重复结束日期
             repeatDays: [] // 对于周重复，选择哪几天
           });
+          const [showForm, setShowForm] = useState(false);
+          const [editingEvent, setEditingEvent] = useState(null);
 
           // 页面加载时从Cloudinary读取数据
           useEffect(() => {
